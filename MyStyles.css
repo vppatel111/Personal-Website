@@ -1,0 +1,238 @@
+.background-image {
+
+  position: fixed;
+  left: 0px;
+  right: 0;
+
+  display: block;
+
+  background-image: url("easy.jpg");
+
+  width: 100%;
+  height: 100%;
+  filter: blur(3px);
+  -webkit-filter: blur(5px);
+
+  overflow: hidden;
+  transform: scale(1.03);
+}
+
+.content {
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.card {
+  z-index: 101;
+  position: fixed;
+  left: 42%;
+  top: 25%;
+  display: none;
+  background-color: rgb(251, 251, 251);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  cursor: pointer;
+}
+
+.container {
+  padding: 0 16px;
+  background-color: rgb(251, 251, 251);
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+#contact {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.chip {
+  position: fixed;
+
+  left: 90%;
+  top: 90%;
+
+  display: inline-block;
+  padding: 0 25px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: rgba(200, 200, 200, 0.4);
+}
+
+.chip img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.time {
+  position: fixed;
+  display: inline-table;
+  text-align: center;
+
+  padding: 0px 0px 0px 0px;
+  z-index: 4;
+  width: 300px;
+  height: 200px;
+
+  font-size: 36px;
+  color: white;
+
+  background: rgba(200, 200, 200, 0.4);
+
+  /*left: 1300px;*/
+  /*top: 275px;*/
+  left: 1250px;
+  top: 300px;
+
+  border-radius: 100%;
+}
+
+#welcome {
+  font-size: 72px;
+}
+
+.mainbody {
+
+  display: initial;
+  position: fixed;
+  top: 20px;
+
+  height: 880px;
+  width: 940px;
+
+  padding: 10px;
+  border-radius: 4px;
+
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+
+  display: none;
+}
+
+#home, #me, #projects {
+
+  position: fixed;
+
+  /*Use display instead of visibility to show/hide elements*/
+  /*display: none;*/
+  /*visibility: hidden;*/
+  opacity: 0;
+
+  left: 1350px;
+  top: 400px;
+
+  /*top: 44%;
+  left: 1170px;*/
+  z-index: 4;
+
+  height: 100px;
+  width: 100px;
+
+  border-radius: 100%;
+
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#me {
+  /*top: 56%;
+  left: 1230px;*/
+}
+
+#projects {
+  /*top: 64%;
+  left: 1350px;*/
+}
+
+#canvas {
+  z-index: 3;
+  position: fixed;
+  left: 1000px;
+  top: 70px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+#menu {
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  background-color: #222;
+  border-radius: 500px;
+  border-radius: 50%;
+  position: fixed;
+  left: 500px;
+  top: 50%;
+  list-style: none;
+  font-size: 200%;
+  transition: width 500ms, height 500ms, margin 500ms;
+  overflow: hidden;
+}
+
+.menu-item {
+  position: absolute;
+  text-decoration: none;
+  top: 50%;
+  left: 50%;
+  display: none;
+}
+
+#hire {
+  position: fixed;
+   left: 0;
+   top: 40%;
+   width: 100%;
+   text-align: center;
+   font-size: 72px;
+   color: white;
+}
